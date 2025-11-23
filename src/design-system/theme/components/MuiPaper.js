@@ -1,12 +1,11 @@
-import shape from "../shape";
 import shadows from "../shadows";
 
 const MuiPaper = {
   styleOverrides: {
     root: {
-      borderRadius: shape.borderRadius,
+      borderRadius: "16px",     // alinhado ao DSCard
       boxShadow: shadows[1],
-      backgroundImage: "none", // remove textura padrão do MUI
+      backgroundImage: "none",
       transition: "0.2s ease",
     },
   },

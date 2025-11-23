@@ -8,7 +8,7 @@ export default function DSCard({
   children,
   variant = "elevated",
   hover = true,
-  padding = 2,
+  padding = 3, // <-- padding padrão maior
   header,
   footer,
   ...props
@@ -33,7 +33,7 @@ export default function DSCard({
 
     glass: {
       ...theme.customEffects.glass.light,
-      backgroundColor: theme.customEffects.glass.light.background,
+      background: theme.customEffects.glass.light.background,
       backdropFilter: theme.customEffects.glass.light.backdropFilter,
       border: theme.customEffects.glass.light.border,
       boxShadow: theme.shadows[1],
@@ -44,7 +44,7 @@ export default function DSCard({
     <Box
       {...props}
       sx={{
-        borderRadius: theme.shape.borderRadius,
+        borderRadius: "16px", // <-- novo radius padrão
         padding: padding,
         transition: "0.25s ease",
         ...variants[variant],
@@ -57,7 +57,8 @@ export default function DSCard({
         }),
       }}
     >
-      {/* Header custom ou padrão */}
+
+      {/* Header custom */}
       {header && <Box sx={{ mb: 2 }}>{header}</Box>}
 
       {/* Título */}
@@ -78,9 +79,11 @@ export default function DSCard({
       )}
 
       {/* Conteúdo */}
-      <Box>{children}</Box>
+      <Box sx={{ mt: 1 }}>
+        {children}
+      </Box>
 
-      {/* Footer custom */}
+      {/* Footer */}
       {footer && <Box sx={{ mt: 2 }}>{footer}</Box>}
     </Box>
   );

@@ -1,18 +1,10 @@
-import shape from "../shape";
 import shadows from "../shadows";
 import effects from "../effects";
 
 const MuiDialog = {
   styleOverrides: {
-    root: {
-      "& .MuiBackdrop-root": {
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
-        backdropFilter: `blur(${effects.blur.md})`,
-      },
-    },
-
     paper: {
-      borderRadius: shape.borderRadius,
+      borderRadius: "16px",  // novo padrão
       boxShadow: shadows[10],
       background: effects.glass.light.background,
       backdropFilter: effects.glass.light.backdropFilter,

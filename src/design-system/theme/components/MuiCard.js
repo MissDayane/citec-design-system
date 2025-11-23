@@ -1,12 +1,12 @@
-import shape from "../shape";
 import shadows from "../shadows";
 
 const MuiCard = {
   styleOverrides: {
     root: {
-      borderRadius: shape.borderRadius,
+      borderRadius: "16px",      
       boxShadow: shadows[1],
-      padding: "16px",
+      padding: "24px",           
+      backgroundImage: "none",
       transition: "0.2s ease-in-out",
 
       "&:hover": {
