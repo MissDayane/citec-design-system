@@ -1,114 +1,63 @@
-// ===================================
-// TIPOGRAFIA — CITEC DESIGN SYSTEM
-// Inter (UI) + Poppins (Titulos)
-// ===================================
-
 const typography = {
-  // Fonte padrão da plataforma
-  fontFamily: [
-    "Inter",
-    "Poppins",
-    "Helvetica",
-    "Arial",
-    "sans-serif"
-  ].join(","),
-
-  // ------------------------------------
-  // HEADINGS — usando Poppins
-  // ------------------------------------
   h1: {
     fontFamily: "Poppins",
     fontWeight: 700,
-    fontSize: "2.25rem",       // 36px
+    fontSize: "3rem",
     lineHeight: 1.2,
   },
   h2: {
     fontFamily: "Poppins",
-    fontWeight: 600,
-    fontSize: "1.875rem",      // 30px
+    fontWeight: 700,
+    fontSize: "2.5rem",
     lineHeight: 1.25,
   },
   h3: {
     fontFamily: "Poppins",
     fontWeight: 600,
-    fontSize: "1.5rem",        // 24px
+    fontSize: "2rem",
     lineHeight: 1.3,
   },
   h4: {
     fontFamily: "Poppins",
-    fontWeight: 500,
-    fontSize: "1.25rem",       // 20px
+    fontWeight: 600,
+    fontSize: "1.6rem",
     lineHeight: 1.35,
   },
   h5: {
     fontFamily: "Poppins",
     fontWeight: 500,
-    fontSize: "1.125rem",      // 18px
+    fontSize: "1.3rem",
     lineHeight: 1.4,
   },
   h6: {
     fontFamily: "Poppins",
     fontWeight: 500,
-    fontSize: "1rem",          // 16px
-    lineHeight: 1.4,
+    fontSize: "1.1rem",
+    lineHeight: 1.45,
   },
 
-  // ------------------------------------
-  // TEXTOS — usando Inter
-  // ------------------------------------
   body1: {
-    fontFamily: "Inter",
-    fontWeight: 400,
-    fontSize: "1rem",          // 16px
+    fontSize: "1rem",
     lineHeight: 1.5,
   },
   body2: {
-    fontFamily: "Inter",
-    fontWeight: 400,
-    fontSize: "0.875rem",      // 14px
-    lineHeight: 1.45,
-  },
-
-  // ------------------------------------
-  // Rótulos / pequenos textos
-  // ------------------------------------
-  subtitle1: {
-    fontFamily: "Inter",
-    fontWeight: 500,
-    fontSize: "0.9375rem",     // 15px
-    lineHeight: 1.45,
-  },
-  subtitle2: {
-    fontFamily: "Inter",
-    fontWeight: 500,
-    fontSize: "0.8125rem",     // 13px
+    fontSize: "0.875rem",
     lineHeight: 1.4,
   },
 
-  // ------------------------------------
-  // Captions / Microtexto
-  // ------------------------------------
+  subtitle1: {
+    fontSize: "1rem",
+    fontWeight: 500,
+  },
   caption: {
-    fontFamily: "Inter",
-    fontWeight: 400,
-    fontSize: "0.75rem",        // 12px
-    lineHeight: 1.3,
+    fontSize: "0.75rem",
+    opacity: 0.8,
   },
 
   overline: {
-    fontFamily: "Inter",
-    fontWeight: 600,
     fontSize: "0.75rem",
+    letterSpacing: 1,
     textTransform: "uppercase",
-    letterSpacing: "0.08em",
-  },
-
-  button: {
-    fontFamily: "Inter",
-    fontWeight: 600,
-    fontSize: "0.9375rem",      // 15px
-    lineHeight: 1.4,
-    textTransform: "none",
   },
 };
 

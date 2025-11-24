@@ -1,7 +1,7 @@
-// ===================================
+// ===================================================
 // EFFECTS — CITEC DESIGN SYSTEM
-// Efeitos visuais: blur, glass, noise, overlay baseados no figma
-// ===================================
+// Efeitos visuais: blur, glass, noise, overlays e states
+// ===================================================
 
 export const blur = {
   xs: "4px",
@@ -61,19 +61,11 @@ export const noise = {
   `,
 };
 
-export const state = {
-  hover: {
-    opacity: 0.9,
-    transform: "translateY(-1px)",
-  },
-  pressed: {
-    opacity: 0.8,
-    transform: "scale(0.98)",
-  },
-  disabled: {
-    opacity: 0.5,
-    cursor: "not-allowed",
-  },
+export const states = {
+  hover: (color) => `${color}E6`,   // 90%
+  pressed: (color) => `${color}CC`, // 80%
+  focus: (color) => `${color}AA`,   // 66%
+  disabled: (color) => `${color}55`, // 33%
 };
 
 export default {
@@ -81,5 +73,5 @@ export default {
   glass,
   overlay,
   noise,
-  state,
+  states,
 };

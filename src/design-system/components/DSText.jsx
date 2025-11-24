@@ -3,7 +3,7 @@ import { Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 export default function DSText({
-  variant = "body",
+  variant = "body1",
   color = "text",
   weight,
   children,
@@ -18,18 +18,16 @@ export default function DSText({
     h4: theme.typography.h4,
     h5: theme.typography.h5,
     h6: theme.typography.h6,
-    body: theme.typography.body1,
+
+    body1: theme.typography.body1,
     body2: theme.typography.body2,
-    subtitle: theme.typography.subtitle1,
+
+    subtitle1: theme.typography.subtitle1,
+    subtitle2: theme.typography.subtitle2,
+
     caption: theme.typography.caption,
     overline: theme.typography.overline,
-
-    title: {
-      fontFamily: "Poppins",
-      fontWeight: 600,
-      fontSize: "1.4rem",
-      lineHeight: 1.3,
-    },
+    button: theme.typography.button,
   };
 
   const colorTokens = {
@@ -49,7 +47,7 @@ export default function DSText({
       sx={{
         ...variants[variant],
         color: colorTokens[color] || theme.palette.text.primary,
-        fontWeight: weight || variants[variant]?.fontWeight,
+        fontWeight: weight ?? variants[variant]?.fontWeight,
       }}
     >
       {children}
